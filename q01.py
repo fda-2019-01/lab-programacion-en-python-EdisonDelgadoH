@@ -9,3 +9,4 @@ col=[column[2] for column in data]
 for i in col:
   cont=cont+int(i)
 print(cont)
+python3  __grade__.py
