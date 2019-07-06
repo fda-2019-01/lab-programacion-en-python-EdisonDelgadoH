@@ -7,4 +7,9 @@
 ## C,27
 ## D,23
 ## E,67
-##
+j=0
+letra = sorted(set([line[0] for line in data]))
+for j in letra:
+    total = sum([int(line[1]) for line in data if line[0] == j])
+    letra=sorted(letra)
+    print ("{},{}".format (str(j), str(total)))
