@@ -16,7 +16,6 @@
 ##
 data=open('data.csv', 'r').readlines()
 data=[line.replace('\t', ';') for line in data]
-#data=[line[:1] for line in data]
 data = [line.split(';')[2] for line in data]
 h=0
 fila=[str(column[5])+str(column[6]) for column in data]
