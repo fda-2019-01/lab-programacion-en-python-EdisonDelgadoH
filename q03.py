@@ -7,6 +7,7 @@
 ## C,27
 ## D,23
 ## E,67
+data=open('data.csv', 'r').readlines()
 j=0
 letra = sorted(set([line[0] for line in data]))
 for j in letra:
